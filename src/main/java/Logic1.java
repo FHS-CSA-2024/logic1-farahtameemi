@@ -430,9 +430,9 @@ public class Logic1
 	sodaParty(70, true) --> true */
 	public boolean sodaParty(int sodas, boolean isWeekend) {
   		if (isWeekend) {
-            return tea >= 40; // weekend successful party
+            return sodas >= 40; // weekend successful party
         }
-        return tea >= 40 && tea <= 60; // weekday successful party
+        return sodas >= 40 && sodas <= 60; // weekday successful party
 	}
 
 }
